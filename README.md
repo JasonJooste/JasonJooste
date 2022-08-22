@@ -13,9 +13,9 @@ Unfortunately, my current projects are still private until we get closer to publ
 ## Generative Bayesian model of metabolic fluxes and thermodynamics
 [In this project](https://github.com/biosustain/gtfa) I wanted to integrate thermodynamics into steady-state flux sampling for my master's thesis. The requirement that the fluxes are steady-state introduces a number of constraints into the model that need to be adressed. I solved this by making explicit the linear relations between the models parameters and removing superfluous parameters. This project also involved improving existing estimates of formation energy covariance to address prediction collinearity. 
 
-## Metabolic model matching and inconsistency detection
+<!--## Metabolic model matching and inconsistency detection
 [In this project](https://github.com/JasonJooste/model_match) I wanted to match two cobra-formatted metabolic models and check their overlap. Unfortunately, they didn't share the same identifiers for the reactions and metabolites but some of the external idenfiers matched. Luckily, reactions can be uniquely identified by the stoichiometry of their substrates and substrates can be identified if they're present in known reactions, so it is possible to iteratively match the idenifiers of the two models. This script matches the two models as well as possible and outputs any inconguencies discovered. 
-
+--> 
 
 <!--## Small RNA mapping
 This was a project during my bachelors, where the goal was to map small RNA sequences (sRNAs) to a larger sequence. Because we knew these sequences were strictly less than 32 characters in length and only encoded four characters, they could be encoded as a single 64 bit integer and stored in a hash table. The sequence could then be rapidly checked by simply bit shifting the new characters on to the existing sequence which would then be checked against the table in very few operations. As someone who doesn't work with C very often it was a good chance to grok memory allocation and pointers. 
