@@ -7,13 +7,13 @@ I'm currently working on a new statistical model for improving the covariance es
 # Projects
 Unfortunately, my current projects are still private until we get closer to publishing, but I have a handful here that might be interesting.
 
-# Improving seedling detection with height data
+## Improving seedling detection with height data
 [In this project](https://github.com/JasonJooste/seedlings_height) I was tasked with integrating height data into an existing Faster-RCNN object detection network to detect conifer seedlings from drone imagery. Interestingly, it turned out that if you introduced the height data directly as a fourth image channel, the performance of  the network decreased. However, pooling the height data and incorporating it after the backbone and before the region proposal network improved performance. It goes to show that it's important to think about how to incorporate new information when using transfer learning. 
 
-# Generative Bayesian model of metabolic fluxes and thermodynamics
+## Generative Bayesian model of metabolic fluxes and thermodynamics
 [In this project](https://github.com/biosustain/gtfa) I wanted to integrate thermodynamics into steady-state flux sampling for my master's thesis. The requirement that the fluxes are steady-state introduces a number of constraints into the model that need to be adressed. I solved this by making explicit the linear relations between the models parameters and removing superfluous parameters. This project also involved improving existing estimates of formation energy covariance to address prediction collinearity. 
 
-# Metabolic model matching and inconsistency detection
+## Metabolic model matching and inconsistency detection
 [In this project](https://github.com/JasonJooste/model_match) I wanted to match two cobra-formatted metabolic models and check their overlap. Unfortunately, they didn't share the same identifiers for the reactions and metabolites but some of the external idenfiers matched. Luckily, reactions can be uniquely identified by the stoichiometry of their substrates and substrates can be identified if they're present in known reactions, so it is possible to iteratively match the idenifiers of the two models. This script matches the two models as well as possible and outputs any inconguencies discovered. 
 
 
